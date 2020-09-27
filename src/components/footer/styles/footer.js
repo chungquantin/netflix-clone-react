@@ -38,7 +38,7 @@ const Link = styled.a`
 const Title = styled.h2`
    color: #757575;
    font-size: 16px;
-   margin-bottom: 40px;
+   margin-bottom: 20px;
 `;
 
 const Text = styled.p`
