@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import { OptForm, Feature } from '../components';
-import { JumbotronContainer, FaqsContainer, HeaderContainer } from '../containers/page__home';
+import { JumbotronContainer, FaqsContainer, HeaderContainer } from '../containers';
 import { FooterContainer } from '../containers';
 
 export default function Home() {
