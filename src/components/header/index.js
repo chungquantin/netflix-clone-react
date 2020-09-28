@@ -14,9 +14,9 @@ Header.Button = function HeaderButton({ children, ...restProps }) {
    return <Button {...restProps}>{children}</Button>;
 };
 
-Header.Logo = function HeaderLogo({ des, children, ...restProps }) {
+Header.Logo = function HeaderLogo({ to, children, ...restProps }) {
    return (
-      <ReactRouterLink to={des}>
+      <ReactRouterLink to={to}>
          <Logo {...restProps} />
       </ReactRouterLink>
    );

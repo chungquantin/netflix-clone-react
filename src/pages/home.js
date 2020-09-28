@@ -9,22 +9,23 @@ export default function Home() {
          <HeaderContainer>
             <Feature>
                <Feature.Title>
-                  100% giải trí.
-                  <br /> 90.000₫ cho 30 ngày đầu của bạn.
+                  100% entertainment.
+                  <br />
+                  90,000 ₫ for your first 30 days.
                </Feature.Title>
-               <Feature.SubTitle>Xem ở mọi nơi. Hủy bất kỳ lúc nào.</Feature.SubTitle>
+               <Feature.SubTitle>Watch anywhere. Cancel anytime.</Feature.SubTitle>
             </Feature>
             <OptForm className="opt-form-header">
                <OptForm.Text className="opt-form-text">
-                  Bạn đã sẵn sàng xem chưa? Nhập email để tạo hoặc kích hoạt lại tư cách thành viên
-                  của bạn.
+                  Ready to watch? Enter your email to create or restart your membership. Email
+                  address
                </OptForm.Text>
                <OptForm.Break />
-               <OptForm.Input placeholder="Địa chỉ email" />
-               <OptForm.Button className="opt-form-button">Thử ngay với 90.000 đ</OptForm.Button>
+               <OptForm.Input placeholder="Email Address" />
+               <OptForm.Button className="opt-form-button">Try now for 90.000 đ</OptForm.Button>
                <OptForm.Break />
                <OptForm.Text className="opt-form-text">
-                  Chỉ các thành viên mới mới đủ điều kiện nhận được ưu đãi này.
+                  Only new members are eligible for this offer.
                </OptForm.Text>
             </OptForm>
          </HeaderContainer>

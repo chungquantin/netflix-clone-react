@@ -3,6 +3,7 @@ import styled from 'styled-components/macro';
 const Container = styled.div`
    display: flex;
    padding: 70px 56px;
+   padding-bottom: 0px;
    margin: auto;
    max-width: 1000px;
    flex-direction: column;

@@ -11,7 +11,7 @@ export default function HeaderContainer({ children, buttonShow = true }) {
                src="https://fontmeme.com/permalink/200928/ea97e0e8139165beaa10a243a708d312.png"
                alt="Netflix"
             />
-            {buttonShow && <Header.Button to={ROUTES.SIGN_IN}>Đăng nhập</Header.Button>}
+            {buttonShow && <Header.Button to={ROUTES.SIGN_IN}>Sign In</Header.Button>}
          </Header.Frame>
          {children}
       </Header>
