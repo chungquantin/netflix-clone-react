@@ -33,6 +33,11 @@ const Link = styled.a`
    margin-bottom: 20px;
    font-size: 14px;
    text-decoration: none;
+   span {
+      &:hover {
+         border-bottom: 0.5px solid #757575;
+      }
+   }
 `;
 
 const Title = styled.h2`

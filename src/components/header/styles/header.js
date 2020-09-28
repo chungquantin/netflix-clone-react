@@ -2,25 +2,27 @@ import styled from 'styled-components/macro';
 import { Link as ReactRouterLink } from 'react-router-dom';
 
 const Container = styled.div`
-   max-width: 1400px;
+   max-width: 1600px;
    width: 100%;
    margin: 0px auto;
    align-items: center;
    justify-content: space-between;
-   padding: 5px 0px;
+   padding: 30px 0px;
+   padding-bottom: 80px;
    display: flex;
 `;
 
 const Logo = styled.img`
-   width: 167px;
+   width: 190px;
+   padding: 0px 30px;
    @media (max-width: 1440px) {
-      width: 134px;
+      width: 157px;
    }
    @media (max-width: 900px) {
-      width: 108px;
+      width: 131px;
    }
    @media (max-width: 550px) {
-      width: 90px;
+      width: 113px;
    }
 `;
 
@@ -35,6 +37,7 @@ const Background = styled.div`
 
 const Button = styled(ReactRouterLink)`
    display: block;
+   margin: 0px 20px;
    background-color: #e50914;
    width: fit-content;
    height: fit-content;
