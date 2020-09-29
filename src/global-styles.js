@@ -28,5 +28,9 @@ html,body{
     }
 }
 
+.browse-header{
+    border: none;
+}
+
 
 }`;

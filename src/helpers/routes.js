@@ -26,10 +26,10 @@ export function IsUserRedirect({ user, loggedInPath, children, ...restProps }) {
    );
 }
 //To protect the authenticated route from non-logged in user
-export function ProtectedRoute({ user, children, ...rest }) {
+export function ProtectedRoute({ user, children, ...restProps }) {
    return (
       <Route
-         {...rest}
+         {...restProps}
          render={({ location }) => {
             if (user) {
                return children;

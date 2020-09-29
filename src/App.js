@@ -8,8 +8,7 @@ import { useAuthListener } from './hooks';
 import './App.css';
 
 function App() {
-   const user = useAuthListener(); //Custom hook to handle user login state
-
+   const { user } = useAuthListener(); //Custom hook to handle user login state
    return (
       <Router>
          <Switch>
