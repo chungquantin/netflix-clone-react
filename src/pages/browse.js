@@ -12,7 +12,6 @@ function Browse() {
    // need slides
    const slides = { series: seriesMap, films: filmsMap };
    // pass it to the browse container
-
    return <BrowseContainer slides={slides} />;
 }
 

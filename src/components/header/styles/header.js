@@ -4,7 +4,7 @@ import { Link as ReactRouterLink } from 'react-router-dom';
 export const Container = styled.div`
    display: flex;
    margin: 0 56px;
-   height: 64px;
+   height: ${({ navActive }) => (navActive === 'true' ? '40px' : '64px')};
    padding: 18px 0;
    justify-content: space-between;
    align-items: center;
@@ -18,6 +18,7 @@ export const Container = styled.div`
 
 export const Logo = styled.img`
    width: 190px;
+   margin-right: 30px;
    @media (max-width: 1440px) {
       width: 157px;
    }
@@ -196,5 +197,24 @@ export const SearchIcon = styled.button`
    img {
       filter: brightness(0) invert(1);
       width: 16px;
+   }
+`;
+
+export const PlayButton = styled.button`
+   box-shadow: 0 0.6vw 1vw -0.4vw rgba(0, 0, 0, 0.35);
+   background-color: #e6e6e6;
+   color: #000;
+   border-width: 0;
+   padding: 10px 20px;
+   border-radius: 5px;
+   max-width: 130px;
+   font-weight: bold;
+   font-size: 20px;
+   margin-top: 10px;
+   cursor: pointer;
+   transition: background-color 0.5s ease;
+   &:hover {
+      background-color: #ff1e1e;
+      color: white;
    }
 `;

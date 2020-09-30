@@ -18,8 +18,12 @@ Header.Feature = function HeaderFeature({ children, ...restProps }) {
    return <Style.Feature {...restProps}>{children}</Style.Feature>;
 };
 
-Header.Frame = function HeaderFrame({ children, ...restProps }) {
-   return <Style.Container {...restProps}>{children}</Style.Container>;
+Header.Frame = function HeaderFrame({ navActive, children, ...restProps }) {
+   return (
+      <Style.Container navActive={navActive} {...restProps}>
+         {children}
+      </Style.Container>
+   );
 };
 
 Header.Group = function HeaderGroup({ children, ...restProps }) {
@@ -73,4 +77,8 @@ Header.Search = function HeaderSearch({ searchTerm, setSearchTerm, ...restProps 
          </Style.SearchIcon>
       </Style.Search>
    );
+};
+
+Header.PlayButton = function HeaderPlayButton({ children, ...restProps }) {
+   return <Style.PlayButton {...restProps}>{children}</Style.PlayButton>;
 };

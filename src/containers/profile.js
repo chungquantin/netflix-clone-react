@@ -1,6 +1,5 @@
 import React, { Fragment } from 'react';
 import { HeaderContainer } from '../containers';
-import * as ROUTES from '../constants/routes';
 import { Profile } from '../components';
 
 export default function ProfileContainer({ user, setProfile }) {
